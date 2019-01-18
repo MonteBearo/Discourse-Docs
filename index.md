@@ -1,15 +1,3 @@
----
-title: "DiscourseWiki"
-author: "MonteBearo"
-toc:
-  depth_from: 1
-  depth_to: 6
-  ordered: true
-export_on_save:
-  html: true
----  
-
-
 # Discourse
 
 
