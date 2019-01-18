@@ -5,7 +5,7 @@ Discourse comes packed with just about everything you'd need to get a dialogue o
 
 ---
 
-## Creating a custom node:
+### Creating a custom node:
 
 
 1. Create a [Custom Action](custom-action).
@@ -17,7 +17,7 @@ Discourse comes packed with just about everything you'd need to get a dialogue o
 
 ---
 
-#### Example:
+### Example:
 
 ```c#
 using System;
@@ -31,7 +31,7 @@ public class NodeCustomAction : Node
 
 ---
 
-#### Changing the appearance of your Node
+### Changing the appearance of your Node
 
 To change the appearance of your node, such as its dimensions, tab colour or whether its title should appear on its body, you must override the `SettingsTemplate` property to point to a new [`NodeSettings`](node-settings.md) struct.
 
@@ -52,7 +52,7 @@ public class NodeCustomAction : Node
 
 ---
 
-#### Changing the Title and Subtitle of the Node
+### Changing the Title and Subtitle of the Node
 
  The Title of a node is the text that will appear in bold at the top of the Node's body, whereas the Subtitle is a smaller line at the bottom of the body, used to summarise the state of that Action. Both the Title and Subtitle can be overriden. For example, in the [Speech](speech.md) node the Title is used to indicate the Speaker of that line, and the Subtitle shows the opening portion of its text.
 
