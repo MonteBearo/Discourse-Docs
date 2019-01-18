@@ -31,7 +31,7 @@ public class NodeCustomAction : Node
 ---
 
 > **Note:** Typically, you will want to add a pass-through property for your Action that casts it to the appropriate type. This is useful if you want to pass a property of your Action into the Subtitle of your node, for instance. To do this, you will need to cast the 'EmbeddedAction' field.
-For example: `private CustomAction MyCustomAction => EmbeddedAction as Speech;`
+For example: `private CustomAction MyCustomAction => EmbeddedAction as CustomAction;`
 
 ---
 
