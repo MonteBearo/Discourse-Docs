@@ -37,7 +37,7 @@ For example: `private CustomAction MyCustomAction => EmbeddedAction as CustomAct
 
 ### Changing the appearance of your Node
 
-To change the appearance of your node, such as its dimensions, tab colour or whether its title should appear on its body, you must override the `SettingsTemplate` property to point to a new [`NodeSettings`](node-settings.md) struct.
+To change the appearance of your node, such as its dimensions, tab colour or whether its title should appear on its body, you must override the `SettingsTemplate` property to point to a new [`NodeSettings`](node-settings.md) struct. Don't worry about caching this, that's taken care of behind the scenes.
 
 In this example, we'll just override the colour:
 
@@ -58,7 +58,7 @@ public class NodeCustomAction : Node
 
 ### Changing the Title and Subtitle of the Node
 
- The Title of a node is the text that will appear in bold at the top of the Node's body, whereas the Subtitle is a smaller line at the bottom of the body, used to summarise the state of that Action. Both the Title and Subtitle can be overridden. For example, in the [Speech](speech.md) node the Title is used to indicate the Speaker of that line, and the Subtitle shows the opening portion of its text.
+ The Title of a node is the text that will appear in bold at the top of the Node's body, whereas the Subtitle is a smaller line at the bottom of the body, used to summarise the state of that Action. Both the Title and Subtitle can be overridden. For example, in the [Speech](speech.md) node the Title is used to indicate the Speaker of that line, and the Subtitle shows a preview of its text.
 
  Here we override Title and Subtitle:
 
