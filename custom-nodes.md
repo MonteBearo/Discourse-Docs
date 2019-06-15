@@ -8,12 +8,12 @@ Discourse comes packed with just about everything you'd need to get a dialogue o
 ### Creating a custom node:
 
 
-1. Create a [Custom Action](custom-action).
-1. Create a new class inside an **Editor** folder (typically, Node class names are prefaced with 'Node').
-1. Inherit the class from [`Node`](node.md).
-1. Make sure you include `using Montebearo.Discourse.Editor;` at the top of the file.
-1. Override the **ActionType** property to point to `typeof(YourCustomAction)`
-1. That's it! Just open the [Search Widget](search-widget.md) and it'll appear under  **Custom/YourCustomAction**.
+1. Create a [Custom Action](discourse-action.md).
+2. Create a new class inside an **Editor** folder (typically, Node class names are prefaced with 'Node').
+3. Inherit the class from [`Node`](node.md).
+4. Make sure you include `using Montebearo.Discourse.Editor;` at the top of the file.
+5. Override the **ActionType** property to point to `typeof(YourCustomAction)`
+6. That's it! Just open the [Search Widget](search-widget.md) and it'll appear under  **Custom/YourCustomAction**.
 
 ---
 
