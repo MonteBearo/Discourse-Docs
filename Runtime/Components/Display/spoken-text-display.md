@@ -1,3 +1,11 @@
+---
+layout: default
+title: Spoken Text Display
+parent: Display
+grand_parent: Components
+nav_order: 1
+---
+
 # Spoken Text Display
 
 ```

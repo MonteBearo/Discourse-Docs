@@ -1,3 +1,11 @@
+---
+layout: default
+title: Audio Handlers
+parent: Audio
+grand_parent: Components
+nav_order: 1
+---
+
 # AudioHandler
 
 AudioHandlers are used for playing Audio on various objects, including Actors and the EventBehaviour.

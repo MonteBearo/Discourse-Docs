@@ -1,3 +1,12 @@
+---
+layout: default
+title: Localisation
+nav_order: 1
+has_children: false
+permalink: /localisation
+---
+
+
 # Localisation
 
 Discourse includes an intuitive, incremental and manageable localisation workflow out of the box. This system revolves around the LocalisedText class, which holds a unique ID to key a string across an arbitrary number of languages (each in turn keyed by their corresponding language code [e.g. 'en-us']).

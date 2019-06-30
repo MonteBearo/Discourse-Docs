@@ -6,7 +6,6 @@ nav_order: 1
 ---
 
 # Search Widget
-
 ---
 
 The Search Widget is a small helper element that allows you to search for and add any nodes in the project (including [Custom Nodes](custom-nodes.md)). To open the Search Widget, simply press the spacebar whilst your mouse is hovering the Discourse work view.

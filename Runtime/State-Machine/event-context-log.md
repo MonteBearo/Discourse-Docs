@@ -1,3 +1,12 @@
+---
+layout: default
+title: Event Context Log
+parent: State Machine
+grand_parent: Components
+nav_order: 1
+---
+
+
 # EventContextLog
 
 ```
