@@ -1,4 +1,4 @@
-#Localisation
+# Localisation
 
 Discourse includes an intuitive, incremental and manageable localisation workflow out of the box. This system revolves around the LocalisedText class, which holds a unique ID to key a string across an arbitrary number of languages (each in turn keyed by their corresponding language code [e.g. 'en-us']).
 
@@ -12,4 +12,4 @@ To export an Event's strings for localisation, follow these steps:
 7) Once the text has been localised, save the CSV, then navigate back to the project.
 8) Select the Event asset you exported from, right click it and select Discourse/Localisation/Import CSV.
 9) Navigate to where you saved the localised CSV, select it and confirm the file dialogue.
-10) The import will shortly complete, and the next time you open the Event Graph you should find your strings have been localised! You can test this by changing the Source Language dropdown on the ReferencesDatabase asset. 
+10) The import will shortly complete, and the next time you open the Event Graph you should find your strings have been localised! You can test this by changing the Source Language dropdown on the ReferencesDatabase asset.

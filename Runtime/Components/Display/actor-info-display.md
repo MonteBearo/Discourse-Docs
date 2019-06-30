@@ -1,6 +1,6 @@
-#Actor Info display
+# Actor Info display
 
-New release
+New release [v1.1.0]
 {: .label .label-purple }
 
 

@@ -1,11 +1,11 @@
-#Spoken Text Display
+# Spoken Text Display
 
 ```
 Montebearo.Discourse.SpokenTextDisplay : MonteBehaviour
 ```
 ---
 
-DEPRECATED
+DEPRECATED [Removed: v1.1.0]
 {: .label .label-red }
 
 
