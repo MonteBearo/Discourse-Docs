@@ -1,3 +1,10 @@
+---
+layout: default
+title: Custom Nodes
+parent: Editor
+nav_order: 1
+---
+
 # Custom Nodes
 ---
 

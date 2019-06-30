@@ -1,3 +1,10 @@
+---
+layout: default
+title: Search Widget
+parent: Editor
+nav_order: 1
+---
+
 # Search Widget
 
 ---
