@@ -1,4 +1,16 @@
+---
+layout: default
+title: Event Behaviour
+parent: Components
+nav_order: 1
+---
+
 # DiscourseEventBehaviour
+
+```
+Montebearo.Discourse.DiscourseEventBehaviour : MonteBehaviour
+```
+---
 
 
 The EventBehaviour holds a reference to an Event that can be played at runtime.
@@ -40,5 +52,4 @@ The EventBehaviour holds a reference to an Event that can be played at runtime.
 | InvokeOnEventExit() | void | Invoke the EventBehaviour's OnEventExit EventHandler. (Called by the Exit action; if you wish to force exit the Event, call ForceQuitEvent() instead). |
 | ForceInvokeAdvance() | void | Invoke the EventBehaviour's Advance EventHandler (used by IEventAdvancers) |
 | ListenForAdvances() | void | Start listening for 'Advance' EventHandler invocations from any registered IEventAdvancers. |
-| StopListeningForAdvances() | void | Stop listening for 'Advance' EventHandler invocations from any registered IEventAdvancers.
-		/// (Useful if you wish to temporarily 'pause' an input that would otherwise trigger the 'Advance' invocation on an IEventAdvancer). |
+| StopListeningForAdvances() | void | Stop listening for 'Advance' EventHandler invocations from any registered IEventAdvancers. (Useful if you wish to temporarily 'pause' an input that would otherwise trigger the 'Advance' invocation on an IEventAdvancer). |
