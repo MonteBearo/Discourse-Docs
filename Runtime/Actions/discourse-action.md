@@ -1,3 +1,10 @@
+---
+layout: default
+title: DiscourseAction
+parent: Actions
+nav_order: 1
+---
+
 # DiscourseAction
 
 ```

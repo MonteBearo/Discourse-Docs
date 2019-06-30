@@ -8,14 +8,15 @@ nav_order: 1
 
 # Spoken Text Display
 
-```
-Montebearo.Discourse.SpokenTextDisplay : MonteBehaviour
-```
----
 
 DEPRECATED [Removed: v1.1.0]
 {: .label .label-red }
 
+```
+Montebearo.Discourse.SpokenTextDisplay : MonteBehaviour
+```
+
+---
 
 > **Note:** This component has since been removed from Discourse [version 1.1]. Please see the [TextDisplay](text-display.md) component for the new workflow.
 

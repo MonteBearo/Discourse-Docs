@@ -1,3 +1,10 @@
+---
+layout: default
+title: DiscourseEvent
+parent: Key Assets
+nav_order: 1
+---
+
 # DiscourseEvent
 
 ```

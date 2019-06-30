@@ -1,3 +1,10 @@
+---
+layout: default
+title: Graph
+parent: Key Assets
+nav_order: 1
+---
+
 # Graph
 
 

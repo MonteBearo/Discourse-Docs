@@ -1,3 +1,10 @@
+---
+layout: default
+title: Entry
+parent: Actions
+nav_order: 1
+---
+
 # Entry
 
 ```
