@@ -16,7 +16,7 @@ Montebearo.Discourse.TextDisplay : MonteBehaviour, ITextDisplay
 ```
 ---
 
-> **Note:** Developers wishing to create TextDisplay should consult the interface ITextDisplay; as described below.
+> **Note:** Developers wishing to implement a custom TextDisplay should consult the interface ITextDisplay; as described below.
 
 ---
 
