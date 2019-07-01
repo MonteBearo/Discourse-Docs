@@ -15,13 +15,13 @@ Montebearo.Discourse.EventContextLog : class
 
 The State Machine is responsible for running all DiscourseActions in the sequence laid out in the Graph.
 
-# Public Properties
+## Public Properties
 
 | Property | Returns | Description |
 |:---------|:--------|:------------|
 | ActiveAction | IEventAction | The Action currently executing. Setting this property Calls OnExit on the existing ActiveAction, stops its coroutine if it's an IAsyncEventAction, sets the ActiveAction to the given Action, then calls OnEnter(), switches the active Camera if the Action is an ICameraSwitchInstruction, then calls the action's Run() method. |
 
-# Public Methods
+## Public Methods
 
 | Method | Returns | Description |
 |:-------|:--------|:------------|

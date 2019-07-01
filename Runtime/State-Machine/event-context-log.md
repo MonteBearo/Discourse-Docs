@@ -27,7 +27,7 @@ public interface Montebearo.Discourse.EventContextLog
 ```
 ---
 
-# Properties
+## Properties
 
 | Property    | Returns     | Description       |
 |:------------|:------------|:------------------|
@@ -38,7 +38,7 @@ public interface Montebearo.Discourse.EventContextLog
 | OptionsDisplay | IOptionsDisplay | The behaviour responsible for displaying a list of Options to the screen. |
 | AudioHandler | IAudioHandler | The behaviour responsible for playing Audio explicitly on the Event object (generic AudioActions).  |
 
-# Methods
+## Methods
 
 | Method | Returns | Description |
 |:-------|:--------|:------------|
