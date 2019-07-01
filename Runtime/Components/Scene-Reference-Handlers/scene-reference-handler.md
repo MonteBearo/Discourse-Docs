@@ -39,7 +39,7 @@ public interface Montebearo.Discourse.ISceneReferenceHandler : IEventComponent
 
 ---
 
-# ISceneReferenceHandler [Generic]
+# ISceneReferenceHandler\<T\>
 
 
 
