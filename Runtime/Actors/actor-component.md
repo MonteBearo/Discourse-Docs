@@ -12,7 +12,9 @@ Montebearo.Discourse.Actor : MonteBehaviour
 ```
 ---
 
-The Actor component automatically registers an ActorInfo with the ReferenceDatabase (during Awake) such that various behaviours can be retrieved from the scene at runtime. This component should live on the actual character in the scene, and only one per-actor should be instanced at any given time.
+The Actor component automatically registers an ActorInfo with the ReferenceDatabase (during Awake) such that components can be retrieved on the Actor's scene object at runtime. This component should live on the character's gameObject in the scene, and only one per-actor should exist at any given time.
+
+---
 
 ## Public Properties
 
