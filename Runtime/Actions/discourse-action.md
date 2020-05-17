@@ -12,7 +12,7 @@ Montebearo.Discourse.DiscourseAction : ScriptableObject
 ```
 ---
 
-Actions are containers for logic that are housed within Nodes and run in sequence at runtime, according to the order of nodes laid out in a [Graph](graph.md). All Nodes must have an Action they are responsible for managing.
+Actions are containers for logic that are housed within Nodes and run in sequence at runtime, according to the order of nodes laid out in a [Graph](../../Key-Assets/graph.md). All Nodes must have an Action they are responsible for managing.
 
 The stock Actions include:
 
@@ -35,8 +35,8 @@ A huge part of Discourse's power in comparison to other dialogue & cutscene tool
 1. Create a new class (C# script, removing the MonoBehaviour inheritance)
 2. Inherit the class from `DiscourseAction`.
 3. Make sure you include `using Montebearo.Discourse;` at the top of the file.
-4. If the Action should run immediately, with no yielded instructions, it should also implement `ISyncEventAction`. If it must yield (like a Coroutine), it should implement `IAsyncEventAction`. Depending on which of these you choose, it will need to implement a public method with the signature `Run(EventContextLog contextLog`, with a return type of `void` or `IEnumerator` depending on it being Sync or Async, respectively. Using the IEnumerator keyword will require you include a `using System.Collections;` statement at the top of the file. For more information on the context log, please see: [EventContextLog](event-context-log.md).
-6. That's it! Now, to be able to add your Action to a graph in the editor, you'll need to create a [Custom Node](custom-nodes.md). Actions don't need Node counterparts in order to be run, just to be configured in the editor.
+4. If the Action should run immediately, with no yielded instructions, it should also implement `ISyncEventAction`. If it must yield (like a Coroutine), it should implement `IAsyncEventAction`. Depending on which of these you choose, it will need to implement a public method with the signature `Run(EventContextLog contextLog`, with a return type of `void` or `IEnumerator` depending on it being Sync or Async, respectively. Using the IEnumerator keyword will require you include a `using System.Collections;` statement at the top of the file. For more information on the context log, please see: [EventContextLog](../State-Machine/event-context-log.md).
+6. That's it! Now, to be able to add your Action to a graph in the editor, you'll need to create a [Custom Node](../../Editor/custom-nodes.md). Actions don't need Node counterparts in order to be run, just to be configured in the editor.
 
 ---
 
