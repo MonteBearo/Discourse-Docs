@@ -8,7 +8,7 @@ nav_order: 1
 # Example Content: Missing References
 ---
 ```
-Discourse 1.3
+Discourse 1.2
 ```
 ---
 
@@ -20,10 +20,9 @@ Sometimes Unity fails to resolve prefab references to scripts imported from the 
 
 ### Fix
 
-Fortunately, this is straightforward to fix:
-
 1. Navigate to Montebearo.Discourse/Montebearo.Discourse.dll
 2. Select the dll, right click it and select "Reimport".
 3. Navigate to Montebearo.Discourse/Example Content. Select just the Example Content folder, right click it and select "Reimport".
+
 
 This should resolve all missing reference errors in the Example scene.
