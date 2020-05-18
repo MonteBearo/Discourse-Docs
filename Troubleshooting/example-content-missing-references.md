@@ -14,7 +14,7 @@ Discourse 1.3
 
 ### Symptoms
 
-Sometimes Unity fails to resolve prefab references to scripts imported from the Prebuild Discourse DLL, which can lead to several missing reference errors and warnings as you attempt to view the Example Content scene.
+Sometimes Unity fails to resolve prefab references to scripts imported from the Prebuilt Discourse DLL, which can lead to several missing reference errors and warnings as you attempt to view the Example Content scene.
 
 ---
 
