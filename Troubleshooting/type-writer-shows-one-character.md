@@ -7,9 +7,9 @@ nav_order: 1
 
 # Typewriter mode displays only one character
 ---
-
-> Version agnostic
-
+```
+Version agnostic
+```
 ---
 
 ### Symptoms

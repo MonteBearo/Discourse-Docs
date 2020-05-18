@@ -7,9 +7,9 @@ nav_order: 1
 
 # Example Content: Asmdef DLL Warnings
 ---
-
-> Discourse 1.3
-
+```
+Discourse 1.3
+```
 ---
 
 ### Symptoms

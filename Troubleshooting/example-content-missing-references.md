@@ -7,8 +7,9 @@ nav_order: 1
 
 # Example Content: Missing References
 ---
-
-> Discourse 1.3
+```
+Discourse 1.3
+```
 ---
 
 ### Symptoms
