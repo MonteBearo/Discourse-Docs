@@ -50,4 +50,4 @@ public class MyComponentReferenceHandler : SceneReferenceHandler<MyComponentLook
 
 ---
 
-You can then add `MyComponentReferenceHandler` to your EventBehaviour, and you will be able to assign instances of the class in the inspector.
+You can then add `MyComponentReferenceHandler` to your EventBehaviour, and you will be able to assign instances of `MyComponent` to it in the inspector.
