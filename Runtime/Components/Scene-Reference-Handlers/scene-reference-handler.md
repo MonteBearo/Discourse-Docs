@@ -3,7 +3,7 @@ layout: default
 title: SceneReferenceHandler
 parent: Scene Reference Handlers
 grand_parent: Components
-has_children: true
+has_children: false
 nav_order: 1
 ---
 

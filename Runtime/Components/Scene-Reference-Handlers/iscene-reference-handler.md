@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Scene Reference Handlers
+title: ISceneReferenceHandler
 parent: Scene Reference Handlers
 grand_parent: Components
-has_children: true
+has_children: false
 nav_order: 1
 ---
 

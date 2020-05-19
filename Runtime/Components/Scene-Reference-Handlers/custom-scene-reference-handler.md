@@ -3,7 +3,7 @@ layout: default
 title: Custom Scene Reference Handlers
 parent: Scene Reference Handlers
 grand_parent: Components
-has_children: true
+has_children: false
 nav_order: 1
 ---
 
@@ -18,7 +18,8 @@ Custom SceneReferenceHandlers require three pieces of data:
 3. The actual SceneReferenceHandler, which you will add to the EventBehaviour
 
 --- 
- ### 1. The Type to Reference
+
+### 1. The Type to Reference
  
 For this example, we will use a custom component 'MyCustomComponent':
 ```c#
