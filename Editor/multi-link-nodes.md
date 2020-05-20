@@ -20,7 +20,7 @@ There are two key parts to a multi-link node; its NodeSettings and the Link_Conn
 
 When you override the `SettingsTemplate` property on a Node, you can pass in an array of floats to the `NodeSettings` struct called 'linkPoints'. The length of this array determines the number of links that are drawn, and each value corresponds to the visual position the Link will be drawn at.
 
-By default, these values should be normalised for the height of the node (e.g. a value of 0.7f will be drawn at 70% of the node's height). You can set `linkPositionsRelative` to true when constructing your NodeSettings if you need to supply absolute pixel positions.
+By default, these values should be normalised for the height of the node (e.g. a value of 0.7f will be drawn at 70% of the node's height). You can set `linkPositionsRelative` to false when constructing your NodeSettings if you need to supply absolute pixel positions.
 
 The Branch node implements its SettingsTemplate as follows, resulting in 2 link points at 30% and 70% of the Node's height:
 
