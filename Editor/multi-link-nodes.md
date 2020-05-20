@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Custom Nodes
+title: Multi-Link Nodes
 parent: Custom Nodes
 grand_parent: Editor
 nav_order: 1
@@ -8,11 +8,13 @@ nav_order: 1
 
 # Multi-Link Nodes
 
-Sometimes you may want your Action to link to a different Action depending on some logic, in which case you probably need  a Multi-Link node. The simplest way of doing this is to create a [Custom Node](custom-nodes.md) with a fixed list of Link points; similar to the Branch node that Discourse ships with. 
+Sometimes you may want an Action to move between a selection of different Actions depending on some logic, in which case you probably need a Multi-Link node. The simplest way of doing this is to create a [Custom Node](custom-nodes.md) with a fixed set of Link points; similar to the Branch node that Discourse ships with. 
 
 ---
 
-The two key parts of a multi-link node are:
+There are two key parts to a multi-link node; its NodeSettings and the Link_ConnectionChanged callback.
+
+---
 
 ### NodeSettings: LinkPoints Array
 
@@ -20,7 +22,7 @@ When you override the `SettingsTemplate` property on a Node, you can pass in an 
 
 By default, these values should be normalised for the height of the node (e.g. a value of 0.7f will be drawn at 70% of the node's height). You can set `linkPositionsRelative` to true when constructing your NodeSettings if you need to supply absolute pixel positions.
 
-For example, the Branch node implements its SettingsTemplate as follows, resulting in 2 link points at 30% and 70% of the Node's height:
+The Branch node implements its SettingsTemplate as follows, resulting in 2 link points at 30% and 70% of the Node's height:
 
 ```c#
 protected override NodeSettings SettingsTemplate => new NodeSettings(new Vector2(96, 64), Colours.DCGreen, new[] {0.3f, 0.7f}, false);
@@ -30,10 +32,10 @@ protected override NodeSettings SettingsTemplate => new NodeSettings(new Vector2
 
 ### Link_ConnectionChanged Callback
 
-A Node gets a callback whenever a connection changes on one of its Link points, and uses this to set the LinkedAction of its embedded Action. This has the following signature:
+A Node gets a callback whenever a connection changes on one of its Link points, and uses this to set the LinkedAction of its embedded Action. This callback has the following signature:
 
 ```c#
-protected virtual void Link_ConnectionChanged(INodeConnectionPoint link, DiscourseAction action) {}
+protected virtual void Link_ConnectionChanged(INodeConnectionPoint link, DiscourseAction action) 
 ```
 
 This passes through the link that changed as an `INodeConnectionPoint`, and the [`DiscourseAction`](../Runtime/Actions/discourse-action.md) it is now connected to; it will be null if it was disconnected.
