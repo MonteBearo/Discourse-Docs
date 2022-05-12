@@ -100,17 +100,20 @@ namespace SampleCode.Editor
 			DiscourseEvent[] eventAssets = GetProjectEvents();
 
 			int failed = 0;
+			int attempts = 0;
 			foreach (DiscourseEvent eventAsset in eventAssets)
 			{
 				//Check if a CSV file exists in the import directory with this event's name, if so, attempt to import it.
 				
 				string filePath = Path.Combine(importDirectory, FormatEventFileName(eventAsset));
 				if(!File.Exists(filePath)) continue;
+
+				attempts++;
 				
 				if (!TryImportEventStrings(eventAsset, filePath)) failed++;
 			}
 			
-			Debug.Log($"<color=cyan>Imported {eventAssets.Length} event strings to {importDirectory} - {failed} failures.</color>");
+			Debug.Log($"<color=cyan>Attempted to import {attempts} event strings to {importDirectory} - {failed} failures.</color>");
 			
 			// Save the project to write the modifications to disk.
 			AssetDatabase.SaveAssets();
