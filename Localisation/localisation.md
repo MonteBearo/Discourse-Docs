@@ -34,7 +34,7 @@ To automate the export and import of strings, you can make use of the ReferenceI
 
 Exactly how you do this is up to you; every project works differently, and you may have a preferred way of automating tools.
 
-Below is an example of a batch export / import tool that finds all DiscourseEvent assets in the project, and exports or imports CSV files to a directory of your choosing.
+Below is an example of a batch export / import tool that finds all DiscourseEvent assets in the project, and exports or imports CSV files to a directory of your choosing. These methods are added to the "Tools/Discourse" menu.
 
 This is an Editor script, so must be placed inside an Editor folder in your project.
 
